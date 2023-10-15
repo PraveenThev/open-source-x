@@ -25,7 +25,7 @@
     </h1>
 
     <h4 class="text-blue text-center font-weight-bold" style="font-size: 20px;">
-      Login
+      Sign Up
     </h4>
 
     <div class="container">
@@ -33,6 +33,30 @@
 
       <div class="col-lg-5 m-auto d-block">
         <form action="#" onsubmit="return validation()" class="bg-light">
+          <div class="form-group">
+            <label for="name" class="font-weight-regular"> Name </label>
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              id="name"
+              autocomplete="off"
+            />
+            <span id="Name" class="text-danger font-weight-regular"> </span>
+          </div>
+
+          <div class="form-group">
+            <label class="font-weight-regular"> Email </label>
+            <input
+              type="text"
+              name="email"
+              class="form-control"
+              id="emails"
+              autocomplete="off"
+            />
+            <span id="emailids" class="text-danger font-weight-regular"> </span>
+          </div>
+
           <div class="form-group">
             <label for="user" class="font-weight-regular"> Username </label>
             <input
@@ -58,19 +82,53 @@
             </span>
           </div>
 
+          <div class="form-group">
+            <label class="font-weight-regular"> Confirm Password </label>
+            <input
+              type="password"
+              name="conpass"
+              class="form-control"
+              id="conpass"
+              autocomplete="off"
+            />
+            <span id="confrmpass" class="text-danger font-weight-regular">
+            </span>
+          </div>
+
+          <div class="form-group">
+            <label class="font-weight-regular"> Mobile Number </label>
+            <input
+              type="text"
+              name="mobile"
+              class="form-control"
+              id="mobileNumber"
+              autocomplete="off"
+            />
+            <span id="mobileno" class="text-danger font-weight-regular"> </span>
+          </div>
+
           <input
             type="submit"
             name="submit"
             value="Submit"
-            class="btn btn-success"
+            class="btn btn-primary"
             autocomplete="off"
-          />&emsp;&emsp;&emsp;&emsp; Did not have an account?
-          <a href="FormValidationSignUp.html">SignUp</a>
+          />
+          <input
+            type="reset"
+            name="reset"
+            value="Reset"
+            class="btn btn-secondary"
+            autocomplete="off"
+          />
+          &emsp;&emsp;&emsp;Already have an account?
+          <a href="FormValidationLogin.html">Login</a>
         </form>
 
         <br /><br />
       </div>
     </div>
-    <script src="./scripts/login.js"></script>
+
+    <script src="./scripts/signup.js"></script>
   </body>
 </html>
